@@ -90,7 +90,7 @@ public class AsrContent {
             totalTime += speechTime;
             //语速计算(字/分钟)
             float speed = sentenceText.length() / (float)speechTime * 6000;
-            System.out.println(sentenceText+":"+speechTime+":"+speed);
+//            System.out.println(sentenceText+":"+speechTime+":"+speed);
             this.speedList.add(speed);
         }
         this.averageSpeed = (float)totalLen / totalTime * 6000;
@@ -115,7 +115,7 @@ public class AsrContent {
             //单位(厘秒)
             int interval = secondTime - firstTime;
             this.sentenceIntervalList.add(Float.valueOf(interval));
-            System.out.println(interval);
+//            System.out.println(interval);
         }
     }
 
