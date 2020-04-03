@@ -77,7 +77,7 @@ public class FluencyUtils {
          float cv = FluencyUtils.cvOf(asrContent.getSpeedList());
          System.out.println(asrContent);
          System.out.println(cv);
-         //整体水平是否卡顿
+         //整体水平是否平稳
          float val1 = 100*(1-cv);
          System.out.println(100*(1-cv));
          float intervalCv = FluencyUtils.cvOf(asrContent.getSentenceIntervalList());
