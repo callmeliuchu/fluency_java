@@ -93,7 +93,9 @@ public class AsrContent {
 //            System.out.println(sentenceText+":"+speechTime+":"+speed);
             this.speedList.add(speed);
         }
-        this.averageSpeed = (float)totalLen / totalTime * 6000;
+        if(totalTime > 0) {
+            this.averageSpeed = (float) totalLen / totalTime * 6000;
+        }
     }
 
 
