@@ -13,7 +13,7 @@ import java.util.List;
 
 public class FluencyUtils {
 
-     public  static String readFile(String filePath ) {
+     private static String readFile(String filePath ) {
          try {
              FileInputStream fin = new FileInputStream(filePath);
              InputStreamReader reader = new InputStreamReader(fin);
